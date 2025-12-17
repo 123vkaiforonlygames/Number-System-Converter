@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number System Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>NUMBER SYSTEM CONVERTER</h1>
+
+    <select id="fromBase">
+      <option value="10">From Decimal (0-1)</option>
+      <option value="2">From Binary (0-9)</option>
+      <option value="8">From Octal (0-8)</option>
+      <option value="16">From Hexadecimal (0-9 & A-F)</option>
+    </select>
+    
+    <input type="text" id="inputNumber" placeholder="Enter value">
+
+    <select id="toBase">
+      <option value="2">To Binary</option>
+      <option value="8">To Octal</option>
+      <option value="10">To Decimal</option>
+      <option value="16">To Hexadecimal</option>
+    </select>
+
+    <input type="text" id="result" placeholder="Result" readonly>
+
+    <button onclick="convertNumber()">Convert</button>
+    <button onclick="clearFields()">Clear Numbers</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
